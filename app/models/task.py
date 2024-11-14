@@ -1,7 +1,7 @@
 from app.backend.db import Base
 from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 from sqlalchemy.orm import relationship
-import user
+#import user #-- закомментируем т.к. не дает собрать alembic revision --autogenerate -m "Initial migration"
 
 class Task(Base):
     __tablename__ = 'task'
